@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <title>Autorepuestos San Martin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- link de la fuente -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/formulario.css">
+  <script src="js"></script>
+<style>
+  body {
+    background-image: url(Imagenes/background.jpg);
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    height: 100vh;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div id="logo">
+      <a class="logo" href="index.html">
+        <img src="imagenes/Logo.svg" alt="Logo AutorepuestosSanMartin">
+      </a>
+    </div>
+
+  <div class="navigation-wrapper">
+    <div class="navigation-button">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <div class="navigation-menu">
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="PruebaDB.php">¿Quiénes Somos?</a></li>
+        <li><a href="NuestrasMarcas.html">Nuestras Marcas</a></li>
+        <li><a href="">Cotización</a></li>
+        <li><a href="">Contáctenos</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <section class="hero">
+      <h1>Autorepuestos <br></h1>
+      <div class="button">
+          <a href="" class="btn1">Nuestros Servicio</a>
+          <a href="" class="btn2">Contáctenos</a>
+      </div>
+  </section>
+
+  
+</div>
+
+
+
+<!--
+<div class="formulario">
+  <form method="post" action="RespuestaContacto.php" id="formulario"  >
+  <ul>
+        
+      
+    <label  for="nya">Nombre:</label>
+    <input type="text" placeholder="Nombre"name="nya" id="nya" />
+    <br>
+    <br>
+    <label for="ape">Apellidos:</label>
+    <input type="text" placeholder="Apellidos"name="ape" id="ape" />
+    <br>
+    <br>
+ 
+    <label for="email">Email:</label>
+    <input type="text" placeholder="Correo Electronico"name="email" id="email" />
+  <br>
+    <br>
+    <label for="tel">Telefono:</label>
+  <input type="text"placeholder="Telefono" name="tel" id="tel" />
+  <br>
+    <br>
+    <label for="come">Comentario:</label>
+    
+    <input type="text"placeholder="Danos tu comentario" name="come" id="come" size="40"    />
+  <br>
+    <br>
+
+    <input class="botonEnviar"type="submit" value="Enviar">
+  </ul> 
+</form>
+
+</div>-->
+
+
+
+
+
+<script>
+  var navButton = document.querySelector('.navigation-button');
+  var navMenu = document.querySelector('.navigation-menu');
+  var win = window;
+
+  function openMenu(event) {
+    navButton.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }
+  
+  function closeMenu(event) {
+    if (navButton.classList.contains('active')) {
+      navButton.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+}
+  navButton.addEventListener('click', openMenu, false);
+
+  win.addEventListener('click',closeMenu, false);
+    
+</script>
+</body>
+</html>

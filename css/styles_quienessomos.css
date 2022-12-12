@@ -1,0 +1,218 @@
+/*---------------------Menu Nuestras Marcas--------------*/
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-menu li {
+  float: right;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-menu li a:hover {
+  background-color: #111;
+}
+/*---------------------Termina Menu Nuestras Marcas--------------*/
+
+
+
+/*-----------Imagen Quienes Somos-----------*/
+
+.who .imagenEmpresa img{
+  width: 30%;
+}
+
+
+
+
+
+
+
+/*-----------Termina Imagen Quienes Somos-----------*/
+.container {
+  width: 80%;
+  height: 40px;
+  position: relative;
+  top: 25px;
+  margin: 0 auto;
+}
+.sq
+{
+  width:100%;
+  height:90px;
+  background-color: black;
+}
+.logo img{
+  width: 250px;
+  height: auto;
+  float: left;
+}
+
+.navigation-button {
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1;
+  top: 25px;
+  right: 100px;
+  background: transparent;
+  cursor: pointer;
+}
+.navigation-button .fa {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 10px;
+    color: white;
+}
+ 
+
+.navigation-menu ul li {
+  list-style: none;
+  font-family: impact;
+  font-weight: 300;
+  color: hsl(0,0%,70%);
+}
+
+.navigation-menu {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background: #fff;
+  height: 100%;
+  transform: skewX(0deg) translate(100%,0);
+  transform-origin: top right;
+  transition: all .2s ease-in;
+  z-index: -1;
+}
+.navigation-menu ul {
+  transform: skewX(-8deg);
+  transform-origin: top left;
+  position: fixed;
+  right: 120px;
+  top: 120px;
+  width: 400px;
+  text-align: right;
+
+}
+.navigation-menu ul li {
+  position: relative;
+    z-index: 999;
+  font-size: 32px;
+  color: hsl(0,0%,10%);
+  line-height: 64px;
+}
+.navigation-menu ul li  a {
+  border: none;
+  color: hsl(0,0%,10%);
+  text-decoration: none;
+}
+.navigation-menu.active {
+  transform: skewX(8deg) translate(0,0);
+    
+}
+
+.navigation-menu li {
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: all .0s ease-in .3s;
+  
+}
+.navigation-menu.active li {
+  opacity: 1;
+  transform: translate(0,0);
+  transition: all .2s ease-in 0s;
+}
+.navigation-menu.active li:nth-child(1) {
+  transition-delay: .3s;
+}
+.navigation-menu.active li:nth-child(2) {
+  transition-delay: .4s;
+}
+.navigation-menu.active li:nth-child(3) {
+  transition-delay: .5s;
+}
+.navigation-menu.active li:nth-child(4) {
+  transition-delay: .6s;
+}
+.navigation-menu.active li:nth-child(5) {
+  transition-delay: .7s;
+}
+.navigation-menu.active li:nth-child(6) {
+  transition-delay: .8s;
+}
+.hero h1{
+  margin-top: 178px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: white;
+} 
+        
+.button {         
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.btn1:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.btn2:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.btn1{
+  padding: 12px 25px;
+  background: #2118B9;
+  text-decoration: none;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.btn2{
+  padding: 12px 25px;
+  background: #f4f6f8;
+  text-decoration: none;
+  color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.formulario{
+  width:435px;
+    margin:auto;
+
+    font-family: Helvetica, Verdana, Geneva, sans-serif;
+    font-size: .8em;
+    
+    padding:15px;
+    
+    padding-bottom: 50px;
+    padding-left:90px;
+    position: relative;
+}
+
+.who{
+  position: absolute;
+  top: 120px;
+  left: 150px 
+}

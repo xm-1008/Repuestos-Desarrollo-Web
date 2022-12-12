@@ -1,0 +1,318 @@
+
+/*---------------------Menu Nuestras Marcas--------------*/
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-menu li {
+  float: right;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-menu li a:hover {
+  background-color: #111;
+}
+/*---------------------Termina Menu Nuestras Marcas--------------*/
+
+.contain {
+  width: 80%;
+  height: 40px;
+  position: relative;
+  top: 25px;
+  margin: 0 auto;
+}
+.sq
+{
+  width:100%;
+  height:90px;
+  background-color: black;
+}
+.logo img{
+  width: 250px;
+  height: auto;
+  float: left;
+}
+
+.navigation-button {
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1;
+  top: 25px;
+  right: 100px;
+  background: transparent;
+  cursor: pointer;
+}
+.navigation-button .fa {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 10px;
+    color: white;
+}
+ 
+
+.navigation-menu ul li {
+  list-style: none;
+  font-family: impact;
+  font-weight: 300;
+  color: hsl(0,0%,70%);
+}
+
+.navigation-menu {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background: #fff;
+  height: 100%;
+  transform: skewX(0deg) translate(100%,0);
+  transform-origin: top right;
+  transition: all .2s ease-in;
+
+}
+.navigation-menu ul {
+  transform: skewX(-8deg);
+  transform-origin: top left;
+  position: fixed;
+  right: 120px;
+  top: 120px;
+  width: 400px;
+  text-align: right;
+
+}
+.navigation-menu ul li {
+  position: relative;
+    z-index: 999;
+  font-size: 32px;
+  color: hsl(0,0%,10%);
+  line-height: 64px;
+}
+.navigation-menu ul li  a {
+  border: none;
+  color: hsl(0,0%,10%);
+  text-decoration: none;
+}
+.navigation-menu.active {
+  transform: skewX(8deg) translate(0,0);
+    
+}
+
+.navigation-menu li {
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: all .0s ease-in .3s;
+  
+}
+.navigation-menu.active li {
+  opacity: 1;
+  transform: translate(0,0);
+  transition: all .2s ease-in 0s;
+}
+.navigation-menu.active li:nth-child(1) {
+  transition-delay: .3s;
+}
+.navigation-menu.active li:nth-child(2) {
+  transition-delay: .4s;
+}
+.navigation-menu.active li:nth-child(3) {
+  transition-delay: .5s;
+}
+.navigation-menu.active li:nth-child(4) {
+  transition-delay: .6s;
+}
+.navigation-menu.active li:nth-child(5) {
+  transition-delay: .7s;
+}
+.navigation-menu.active li:nth-child(6) {
+  transition-delay: .8s;
+}
+.hero h1{
+  margin-top: 178px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: white;
+} 
+        
+.button {         
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.btn1:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.btn2:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.btn1{
+  padding: 12px 25px;
+  background: #2118B9;
+  text-decoration: none;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.btn2{
+  padding: 12px 25px;
+  background: #f4f6f8;
+  text-decoration: none;
+  color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*---------------Style Imagenes Marcas------------------*/
+.container {
+    position: absolute;
+    left: 24%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+.pic-container {
+    float: left;
+}
+
+.parent {
+    position: relative;
+    width: 200px;
+    height: 130px;
+    margin: 2 auto;
+}
+
+.wrapper {
+    width: 209px;
+    height: 98px;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: transform 375ms, width 275ms 100ms, height 375ms;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper.open {
+    width: 330px;
+    height: 260px;
+    translate transition: transform 375ms, width 375ms, height 275ms 100ms;
+}
+
+.wrapper div.content {
+    position: absolute;
+    margin: auto;
+    left: -9999px;
+    right: -9999px;
+    transform-origin: top;
+    width: 330px;
+    transform: scale(0.62);
+    height: 300px;
+    border-radius: 3px;
+    background: #fff;
+    overflow: hidden;
+    transition: transform 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.wrapper.open .content {
+    transform: scale(1);
+}
+
+.wrapper .img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.thumb-1 .img {
+    background-image: url(https://www.carlogos.org/logo/Isuzu-logo-1991-3840x2160.png);
+}
+.thumb-2 .img {
+    background-image: url(https://i.wheelsage.org/pictures/suzuki/logotypes/autowp.ru_suzuki_logo_1.jpg);
+}
+.thumb-3 .img {
+    background-image: url(http://www.acidomagenta.com/wp-content/uploads/2009/01/Untitled-11.jpg);
+}
+.thumb-4 .img {
+    background-image: url(https://www.carlogos.org/logo/Geo-logo.png);
+}
+.thumb-5 .img {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/KIA_Motors.svg/1191px-KIA_Motors.svg.png);
+}
+.thumb-6 .img {
+    background-image: url(https://www.hyundainews.com/img/placeholder.png);
+}
+.thumb-7 .img {
+    background-image: url(https://www.pureseo.co.nz/wp-content/uploads/2016/08/Subaru-Logo-small.jpg);
+}
+.thumb-8 .img {
+    background-image: url(https://cdn.worldvectorlogo.com/logos/daihatsu-3.svg);
+}
+.thumb-9 .img {
+    background-image: url(http://pluspng.com/img-png/mazda-logo-png-mazda-mazda3-600.png);
+}
+.thumb-10 .img {
+    background-image: url(http://scantoolresource.com/wp-content/uploads/mitsubishi-logo.png);
+}
+.thumb-11 .img {
+    background-image: url(https://www.markwaterpumps.limited/wp-content/uploads/2014/02/nissan-logo1.jpg);
+}
+.thumb-12 .img {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvHbKO2ASlVthdSs5LLHa2crLozYg_HR_EdVrIDRqti9rn4GJ);
+}
+.thumb-13 .img {
+    background-image: url(https://www.goldeagle.com/wp-content/uploads/2018/11/Chevypnglogo1.png);
+}
+
+.text {
+    padding: 40px;    
+    font-size:12px;
+    font-weight:bold;
+    margin-top: 25px;
+}
+
+.title {
+    width: 35%;
+    height: 15px;
+    background:lightgray;
+    opacity: 0.7;
+    margin-top: 10px;
+    position: absolute;
+    top: 170px;
+    left:15px;
+}
+
+.subtitle {
+    width: 90%;  
+    height: 20px;
+   /*background:lightgray;*/
+    opacity: 0.7;
+    margin-top: 10px;
+    position: absolute;
+    top: 188px;  
+    left:15px;
+}
